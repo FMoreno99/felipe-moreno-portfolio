@@ -64,7 +64,7 @@ const PORTFOLIO_DATA = {
       shortDescription: "Plataforma de estudos que combina questões acadêmicas com elementos de RPG.",
       fullDescription: "Atuei no desenvolvimento do front-end.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "REST API", "Figma", "JWT"],
-      repoUrl: "",
+      repoUrl: "https://github.com/Lucas-Gatto/Questoes-e-Masmorras",
       liveUrl: "",
       participation: [],
       screenshots: [
