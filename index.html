@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe da Silva Moreno | Portfólio DSM & Engenharia de Software</title>
+  
+  <!-- Fontes Autorais: Syne (Display), Plus Jakarta Sans (Corpo), JetBrains Mono (Código/Dados) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#home" class="brand" onclick="switchMainView('master')">
+        <span class="brand-badge">FM</span>
+        <div class="brand-text">
+          <strong>Felipe da Silva Moreno</strong>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="main-nav">
+        <button class="nav-btn active" data-view="master" onclick="switchMainView('master')">
+          Portfólio
+        </button>
+        <button class="nav-btn" data-view="wall" onclick="switchMainView('wall')">
+          Diplomas <span class="badge-count" id="cert-count">0</span>
+        </button>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle" id="themeToggle" title="Alternar tema claro/escuro">
+          <span class="theme-icon">◐</span>
+          <span class="mono-label">TEMA</span>
+        </button>
+        <a href="https://www.linkedin.com/in/felipe-moreno99/" target="_blank" rel="noopener noreferrer" class="btn-outline social-icon-link" aria-label="LinkedIn">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="3" fill="#0A66C2"/>
+            <circle cx="7.4" cy="6.1" r="1.65" fill="#fff"/>
+            <path fill="#fff" d="M6 9h2.8v10H6zm4.4 0h2.7v1.4h.04c.38-.75 1.32-1.55 2.72-1.55 2.91 0 3.44 1.92 3.44 4.42V19h-2.84v-5.08c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68V19H10.4z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/FMoreno99" target="_blank" rel="noopener noreferrer" class="btn-outline social-icon-link" aria-label="GitHub">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.24-5.1 5.52.4.34.76 1.02.76 2.06v3.07c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="view-master" class="view-section active">
+    
+    <section class="hero-section container">
+      <div class="hero-grid">
+        
+        <div class="profile-frame-wrapper">
+          <div class="profile-frame">
+            <img
+              src="https://github.com/FMoreno99.png"
+              alt="Foto de Felipe da Silva Moreno"
+              class="profile-img"
+            >
+          </div>
+        </div>
+
+        <div class="hero-info">
+          <div class="eyebrow mono-label">DESENVOLVIMENTO DE SOFTWARE</div>
+          <h1 class="hero-title">Felipe da Silva Moreno</h1>
+          <p class="hero-bio">
+            Este portfólio reúne projetos acadêmicos e autorais que desenvolvi em software, interfaces web e ferramentas para transmissões esportivas.
+          </p>
+
+          <div class="social-bar">
+            <a href="https://github.com/FMoreno99" target="_blank" rel="noopener noreferrer" class="btn-primary social-button">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/felipe-moreno99/" target="_blank" rel="noopener noreferrer" class="btn-secondary social-button">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24">
+                <rect width="24" height="24" rx="3" fill="#0A66C2"/>
+                <circle cx="7.4" cy="6.1" r="1.65" fill="#fff"/>
+                <path fill="#fff" d="M6 9h2.8v10H6zm4.4 0h2.7v1.4h.04c.38-.75 1.32-1.55 2.72-1.55 2.91 0 3.44 1.92 3.44 4.42V19h-2.84v-5.08c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68V19H10.4z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <button class="btn-secondary" onclick="switchMainView('wall')">
+              Ver diplomas
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block container" id="sec-formacao">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Formação acadêmica</h2>
+        </div>
+      </div>
+      <div class="education-cards">
+        <article class="edu-card highlight-edu">
+          <h3>Bacharelado em Jornalismo</h3>
+          <p class="edu-inst">Universidade Nove de Julho (UNINOVE)</p>
+          <p class="edu-note">Curso voltado à apuração e produção jornalística, redação e comunicação em diferentes mídias.</p>
+          <p class="edu-note"><strong>Observação:</strong> falta cumprir o estágio curricular obrigatório para concluir a graduação.</p>
+        </article>
+        <article class="edu-card highlight-edu">
+          <h3>Tecnologia em Desenvolvimento de Software Multiplataforma (DSM)</h3>
+          <p class="edu-inst">FATEC Zona Leste · Centro Paula Souza</p>
+          <p class="edu-note">Graduação em andamento desde o primeiro semestre de 2024, com conclusão prevista para dezembro de 2027.</p>
+        </article>
+        <article class="edu-card highlight-edu">
+          <h3>Intercâmbio — Mobilidade acadêmica</h3>
+          <p class="edu-inst">Universidad Nacional Arturo Jauretche (UNAJ) · Argentina</p>
+          <p class="edu-note">Mobilidade acadêmica concluída. O certificado ainda aguarda emissão.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block container" id="sec-projetos">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Projetos</h2>
+          <p class="section-subtitle">Projetos acadêmicos realizados até o 4º semestre, além de projetos autorais e profissionais.</p>
+        </div>
+      </div>
+
+      <div class="project-group">
+        <h3 class="project-group-title">Projetos acadêmicos</h3>
+        <div class="projects-grid" id="academic-projects-grid"></div>
+      </div>
+      <div class="project-group">
+        <h3 class="project-group-title">Projetos autorais</h3>
+        <div class="projects-grid" id="personal-projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-block container" id="sec-experiencia">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Experiência Profissional</h2>
+        </div>
+      </div>
+
+      <div class="timeline-list" id="experience-list"></div>
+    </section>
+
+    <section class="section-block container two-col-section" id="sec-extensao-idiomas">
+      
+      <div class="col-panel">
+        <div class="panel-header">
+          <div class="panel-title-row">
+            <h2>Cursos de Extensão</h2>
+            <button class="link-btn mono-label" onclick="switchMainView('wall')">Ver diplomas →</button>
+          </div>
+        </div>
+        <div class="extension-table-wrapper">
+          <table class="extension-table" id="extension-table">
+            <thead>
+              <tr>
+                <th>Certificado</th>
+                <th>Instituição</th>
+                <th>Carga Horária</th>
+                <th>Início / Término</th>
+              </tr>
+            </thead>
+            <tbody id="extension-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-panel">
+        <div class="panel-header">
+          <h2>Idiomas & Proficiência</h2>
+        </div>
+        <div class="languages-list" id="languages-list"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <section id="view-project-detail" class="view-section">
+    <div class="container detail-container">
+      
+      <div class="detail-topbar">
+        <button class="btn-back" onclick="closeProjectScreen()">
+          ← Voltar aos projetos
+        </button>
+        <div class="detail-nav-arrows">
+          <button class="btn-outline mono-label" id="prevProjectBtn">← Projeto Anterior</button>
+          <button class="btn-outline mono-label" id="nextProjectBtn">Próximo Projeto →</button>
+        </div>
+      </div>
+
+      <div id="project-detail-content"></div>
+
+    </div>
+  </section>
+
+  <section id="view-wall" class="view-section">
+    <div class="container">
+      
+      <div class="wall-hero">
+        <div>
+          <h1 class="wall-title">Diplomas e certificados</h1>
+          <p class="wall-desc">
+            Clique em um item para ver os detalhes e abrir o certificado original.
+          </p>
+        </div>
+        <div class="wall-filters" id="wall-filters">
+          <button class="filter-chip active" data-cert-filter="all">Todos</button>
+          <button class="filter-chip" data-cert-filter="tech">Cursos</button>
+          <button class="filter-chip" data-cert-filter="formacao">Formações</button>
+        </div>
+      </div>
+
+      <div class="diploma-wall-grid" id="diploma-wall-grid"></div>
+
+    </div>
+  </section>
+
+  <div class="diploma-modal-backdrop" id="diplomaModal" onclick="closeDiplomaModal(event)">
+    <div class="diploma-modal-box" role="dialog" aria-modal="true" aria-label="Detalhes do diploma">
+      <button class="modal-close" onclick="closeDiplomaModal()" aria-label="Fechar">×</button>
+      <div id="diploma-modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-portfolio">
+        <strong>Felipe da Silva Moreno</strong> · Portfólio
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
